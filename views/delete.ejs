@@ -1,0 +1,23 @@
+<!--Delete Page-->
+<%- include('layouts/header'); -%>
+<body>
+  <%- include('layouts/siteheaderdashboard'); -%>
+    <section>
+        <div class="formData">
+            <%
+          for(var page  of pages){
+              if(pageId==page._id)
+              {
+            %>
+            Successfully Deleted <%=page.pageName%> Blog
+            <%
+            }
+          }
+        %>
+            
+        </div>
+    </section>
+    <%- include('layouts/sitefooter'); -%>
+</body>
+<%- include('layouts/footer'); -%>
+

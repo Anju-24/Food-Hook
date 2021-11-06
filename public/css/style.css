@@ -1,0 +1,294 @@
+
+/*reset selector*/
+*{
+    margin: 0;
+    padding:0;
+
+  }
+.bgded {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:1em 0 4em;
+    min-height: 300px;
+    min-width: 100%;
+}
+
+.wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.row1 {
+    color: #FFFFFF;
+    background-color: rgba(2, 2, 2, 0.65);
+}
+
+#header #logo {
+    margin: 20px;
+}
+
+.fl_left{
+    float: left;
+}
+
+
+.imgl {
+    float: right;
+}
+
+
+#mainav .drop {
+    padding-left: 15px;
+}
+
+#mainav li a {
+    color: wheat;
+}
+
+#mainav li a {
+    display: block;
+    padding: 30px 0;
+    color: #e7ae44;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color:purple;
+}
+
+a:hover{
+    color: coral
+}
+
+.hoc {
+    display: block;
+    margin: 0 auto;
+}
+
+#mainav li {
+    display: inline-block;
+    position: relative;
+    margin:  15px;
+    padding: 0;
+}
+
+body, input, textarea, select {
+    font-family: Verdana;
+    height: 2em;
+    width: 100%;
+}
+
+/* the styles for the footer */
+footer p {
+	text-align: center;
+	border-bottom: 3px solid #931420;
+	background-color: #931420;
+	color: white;
+	padding: 1em 0;
+	clear: both;
+}
+
+.parent{
+    position: relative;
+}
+.over-img{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
+
+form, .formData{
+    width: 600px;
+    border: 3px solid white;
+    box-shadow: 0 0 10px #2c2c2c;
+    padding: 60px;
+    margin: 50px auto;
+    color: white;
+    background-color: rgb(37, 17, 37);
+    border-radius: 20px;
+}
+label{
+    width: 250px;
+    display: inline-block;
+    font-size: 1.5em;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 0.8em;
+}
+
+input[type="submit"]{
+    width: 60%;
+    font-size: 1.5em;
+    background-color: #065e2e;
+    color: white;
+    font-family: cursive;
+    border: 10px;
+    padding: 5px;
+    height: 70px;
+    border-radius: 12px;
+    margin: 1em 5em 1em;
+    
+}
+
+.errors{
+    color: white;
+    font-family: cursive;
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+
+}
+
+
+section{
+    margin: 2em;
+    border: 10px groove black;
+    background: cornsilk;
+    font-style: italic;
+    font-family: cursive;
+    padding: 1em;
+    font-size: 1.5em;
+    border-radius: 20px;
+}
+
+section img{
+    width: 400px;
+    float: left;
+    border: 1em solid #82002652;
+    margin-right: 2em;
+    border-radius: 20px;    
+}
+
+.centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    font-family: cursive;
+    font-size: 200%;
+    color: #c51d0a;
+    font-style: italic;
+    font-weight: bolder;
+    border-radius: 40px;
+  }
+
+  main h2{
+    text-align: center;
+    font-family: cursive;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: bolder;
+    background-color: #61211c;
+    color: white;
+}
+  
+.description
+{
+    margin: 20px;
+    padding: 20px;
+}
+
+  body{
+    background-color: rgb(224, 194, 115);
+  }
+
+  /*Style rule for table*/
+table 
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 700px;
+    border: 10px solid black;
+    background-color: #bbb3f5ad;
+    table-layout: auto;
+    margin: 20px auto;
+
+}
+table#customer td{
+    width:40px;
+}
+  
+/*Style rule for table td*/
+td 
+{
+    text-align: left;
+    padding: 10px;
+    border: 2px dotted black;
+}
+  
+/*Style rule for table th*/  
+th
+{
+  text-align: center;
+  padding: 10px;
+  border: 5px solid black;
+}
+
+/*Style rule for altering the background colurs for rows in table*/ 
+tr:nth-child(even) 
+{
+  background-color: #f2f2f2;
+}
+
+td a{
+    color: purple;
+}
+
+.message
+{
+    float: right;
+    color: yellowgreen;
+    font-size: 1.5em;
+}
+
+.error{
+    font-size: 15px;
+    color: #9f0b0a;
+    text-align: left;
+}
+
+.hero-image {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ), url("/images/Blogging.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: wheat;
+  }
+
+  button
+  {
+    text-decoration: none; 
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color:cornflowerblue;
+    border-radius: 5px;  
+    margin: 5px;
+    padding: 10px;
+  }
+ 

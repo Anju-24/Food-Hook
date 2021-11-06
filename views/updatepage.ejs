@@ -1,0 +1,29 @@
+<!--Update Page with table to manage the pages-->
+<%- include('layouts/header'); -%>
+<body>
+    <%- include('layouts/siteheaderdashboard'); -%>
+    <main>
+        <h2>Edit Blogs</h2>
+        <table>
+            <tr>
+              <th>Blog</th>
+              <th>Manage</th>
+              <th>Manage</th>
+            </tr>
+            <%
+            for(var page of pages)
+            {
+              %>
+              <tr>             
+                <td><%= page.pageName %> </td>
+                <td><a href="/edit/<%= page._id %>">Edit</a></td>
+                <td><a href="/delete/<%= page._id %>">Delete</a></td>  
+            </tr>            
+              <%
+            }
+          %>        
+          </table>
+      </main>
+<%- include('layouts/sitefooter'); -%>
+</body>
+<%- include('layouts/footer'); -%>

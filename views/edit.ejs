@@ -1,0 +1,38 @@
+<!--Edit Page -->
+<%- include('layouts/header'); -%>
+<body>
+    <%- include('layouts/siteheaderdashboard'); -%>
+  <main>
+    <h2>Edit Blog</h2>
+    <form method="POST" enctype="multipart/form-data">      
+      <div class="wrapper">
+        <label for="pageName">Blog Title</label>
+        <input type="text" id="pageName" name="pageName" value="<%= page.pageName %>">
+      </div>      
+      <div class="wrapper">
+        <label for="pageDescription">Blog Description</label>
+        <input type="text" id="pageDescription" name="pageDescription" value="<%= page.pageDescription %>">
+      </div>
+      <div class="wrapper">
+        <label for="pageHeroImage">Blog Image Upload</label>
+        <input type="file" id="pageHeroImage" name="pageHeroImage" value="<%= page.pageHeroImage %>">
+      </div>
+      <div class="submission">
+        <input type="submit" value="Update">
+      </div>
+    </form>
+  </main>  
+  <%- include('layouts/sitefooter'); -%>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../js/tinymce/jquery.tinymce.min.js"></script>
+<script src="../js/tinymce/tinymce.min.js"></script>
+<script>
+  tinymce.init({
+      selector: '#pageDescription',
+      height: 500,
+      menubar: false,
+      toolbar:true    
+  });
+</script>
+<%- include('layouts/footer'); -%>

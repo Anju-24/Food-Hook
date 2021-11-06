@@ -1,0 +1,29 @@
+<!--Site Header for Home-->
+<header> 
+    <!-- Top Background Image Wrapper -->
+<div class="bgded" style="background-image:url('/images/headerbackground.jpg');">
+    <div class="wrapper row1">
+      <header id="header" class="hoc clear">
+        <div id="logo" class="fl_left">        
+         <a href="/"> <img src="/images/logo.png" alt="Site Logo" width="80"></a>
+        </div>               
+      </header> 
+    <nav id="mainav" class="fl_right">
+        <ul class="clear">
+        <li><a href="/">Home</a></li> 
+        <%
+          for(var page  of pages){
+            %>
+              <li><a href="<%= page._id %>"><%= page.pageName %></a></li>
+            <%
+          }
+        %>
+        <li><a href="/login">Dashboard</a></li>  
+      </ul>
+      </nav>         
+  </div>    
+  <div class="centered">
+    <h1>Food Hook</h1><sub><i><h4>...The finest flavors explored</h4></i></sub>
+  </div>         
+</header> 
+

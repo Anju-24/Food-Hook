@@ -1,0 +1,17 @@
+<!--Blog Page-->
+<%- include('layouts/header'); -%>
+<body>
+    <%- include('layouts/siteheaderhome'); -%>
+    <main>
+        <h2><%= pageName %></h2>
+        <section>
+            <div class="cardData">                         
+              <img src="uploads/<%= pageHeroImage %>" alt="<%= pageName %>">
+              <p><%- pageDescription %></p>    
+              <div style="clear: both;"></div>    
+            </div>
+        </section>
+      </main>
+<%- include('layouts/sitefooter'); -%>
+</body>
+<%- include('layouts/footer'); -%>

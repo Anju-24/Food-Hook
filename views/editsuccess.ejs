@@ -1,0 +1,15 @@
+<!--Edit Success redirection page-->
+<%- include('layouts/header'); -%>
+<body>
+    <%- include('layouts/siteheaderdashboard'); -%>
+    <main>
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1 style="font-size:50px;color:whitesmoke;">Congratulations! Your Blog <%= pageName %> Updated</h1>
+            <a href="../<%=pageId %>"><button>View Blog</button></a>
+          </div>
+        </div>        
+      </main>
+<%- include('layouts/sitefooter'); -%>
+</body>
+<%- include('layouts/footer'); -%>
